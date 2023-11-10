@@ -155,6 +155,7 @@
         $("#wrapper").toggleClass("toggled");
       });
     </script>
+    
     @stack('addon-script')
   </body>
 </html>

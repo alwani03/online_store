@@ -28,6 +28,8 @@ Route::get('/dashboard/products/{id}', 'DashboardProductController@details')->na
 
 
 Route::get('/dashboard/transactions', 'DashboardTransactionsController@index')->name('dashboard-transactions');
+Route::get('/dashboard/transactions/{id}', 'DashboardTransactionsController@details')->name('dashboard-transactions-details');
+
 
 
 
