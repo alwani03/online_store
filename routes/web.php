@@ -20,10 +20,15 @@ Route::get('/cart', 'CartController@index')->name('cart');
 Route::get('/success', 'CartController@success')->name('success');
 
 Route::get('/register/success', 'Auth\RegisterController@success')->name('success');
+
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 Route::get('/dashboard/products', 'DashboardProductController@index')->name('dashboard-products');
 Route::get('/dashboard/products/create', 'DashboardProductController@create')->name('dashboard-products-create');
 Route::get('/dashboard/products/{id}', 'DashboardProductController@details')->name('dashboard-products-details');
+
+
+Route::get('/dashboard/transactions', 'DashboardTransactionsController@index')->name('dashboard-transactions');
+
 
 
 
