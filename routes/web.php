@@ -21,7 +21,8 @@ Route::get('/success', 'CartController@success')->name('success');
 
 Route::get('/register/success', 'Auth\RegisterController@success')->name('success');
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
-Route::get('/dashboard-products', 'DashboardProductController@index')->name('dashboard-products');
+Route::get('/dashboard/products', 'DashboardProductController@index')->name('dashboard-products');
+Route::get('/dashboard/products/{id}', 'DashboardProductController@details')->name('dashboard-products-details');
 
 
 
