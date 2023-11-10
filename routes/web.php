@@ -30,6 +30,12 @@ Route::get('/dashboard/products/{id}', 'DashboardProductController@details')->na
 Route::get('/dashboard/transactions', 'DashboardTransactionsController@index')->name('dashboard-transactions');
 Route::get('/dashboard/transactions/{id}', 'DashboardTransactionsController@details')->name('dashboard-transactions-details');
 
+Route::get('/dashboard/settings', 'DashboardSettingController@store')->name('dashboard-setting-store');
+Route::get('/dashboard/accounts', 'DashboardSettingController@accounts')->name('dashboard-setting-accounts');
+
+
+
+
 
 
 
