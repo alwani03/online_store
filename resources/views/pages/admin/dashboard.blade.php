@@ -26,7 +26,7 @@ data-aos="fade-up"
               Customer
             </div>
             <div class="dashboard-card-subtitle">
-              15,209
+              {{ $customer }}
             </div>
           </div>
         </div>
@@ -38,7 +38,7 @@ data-aos="fade-up"
               Revenue
             </div>
             <div class="dashboard-card-subtitle">
-              $931,290
+              {{$revenue}}
             </div>
           </div>
         </div>
@@ -50,7 +50,7 @@ data-aos="fade-up"
               Transaction
             </div>
             <div class="dashboard-card-subtitle">
-              22,409,399
+              {{$transactions}}
             </div>
           </div>
         </div>
